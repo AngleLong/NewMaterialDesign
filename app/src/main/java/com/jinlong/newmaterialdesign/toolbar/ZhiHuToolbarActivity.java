@@ -1,4 +1,4 @@
-package com.jinlong.newmaterialdesign;
+package com.jinlong.newmaterialdesign.toolbar;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,6 +8,8 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
+
+import com.jinlong.newmaterialdesign.R;
 
 public class ZhiHuToolbarActivity extends AppCompatActivity {
 

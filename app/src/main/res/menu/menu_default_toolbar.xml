@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/menu_search"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="搜索"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_fragment"
+        android:title="去带有Fragment的menu" />
+
+    <item
+        android:id="@+id/menu_cool"
+        android:icon="@mipmap/ic_directions_bike_white_24dp"
+        android:title="用于展示折叠条目的一些相应的属性"
+        android:titleCondensed="折叠"
+        app:showAsAction="ifRoom|collapseActionView">
+
+        <menu>
+            <item
+                android:icon="@mipmap/ic_delete"
+                android:orderInCategory="1"
+                android:title="折叠">
+
+                <menu>
+                    <item
+                        android:icon="@mipmap/ic_delete"
+                        android:orderInCategory="10"
+                        android:title="折叠1" />
+                    <item
+                        android:icon="@mipmap/ic_delete"
+                        android:title="折叠2" />
+                    <item
+                        android:icon="@mipmap/ic_delete"
+                        android:title="折叠3" />
+                </menu>
+            </item>
+            <item
+                android:icon="@mipmap/ic_delete"
+                android:orderInCategory="10"
+                android:title="折叠1" />
+            <item
+                android:icon="@mipmap/ic_delete"
+                android:title="折叠2" />
+            <item
+                android:icon="@mipmap/ic_delete"
+                android:title="折叠3" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/menu_cycling"
+        android:icon="@mipmap/ic_directions_bike_white_24dp"
+        android:title="去知乎的Toolbar"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_other"
+        android:icon="@mipmap/ic_directions_bike_white_24dp"
+        android:title="其他"
+        app:showAsAction="withText">
+
+        <menu>
+            <item android:title="其他1" />
+            <item android:title="其他2" />
+            <item android:title="其他3" />
+            <item android:title="其他4" />
+        </menu>
+    </item>
+</menu>

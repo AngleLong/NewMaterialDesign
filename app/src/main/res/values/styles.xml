@@ -42,6 +42,12 @@
         <item name="android:paddingRight">-5dp</item>
     </style>
 
+    <!--menu的文字样式,不好使-->
+    <style name="MenuTextStyle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
     <!--navigationIcon和Title的距离问题-->
     <style name="NoSpaceActionBarTheme" parent="Base.Widget.AppCompat.Toolbar">
         <item name="contentInsetStart">0dp</item>
