@@ -58,6 +58,13 @@
         android:icon="@mipmap/ic_directions_bike_white_24dp"
         android:title="去知乎的Toolbar"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_yun"
+        android:icon="@mipmap/ic_directions_bike_white_24dp"
+        android:title="去网易云音乐的Toolbar"
+        app:showAsAction="never" />
+
     <item
         android:id="@+id/menu_other"
         android:icon="@mipmap/ic_directions_bike_white_24dp"

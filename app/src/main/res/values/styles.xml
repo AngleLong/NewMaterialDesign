@@ -13,9 +13,18 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="android:textColorSecondary">#ffffff</item>
+        <!--Toolbar的主题设置-->
         <item name="toolbarStyle">@style/NoSpaceActionBarTheme</item>
+
+        <!--SearchView的主题设置-->
+        <item name="searchViewStyle">@style/SearchViewStyle</item>
     </style>
 
+    <!--SearchView的主题设置-->
+    <style name="SearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <item name="searchIcon">@mipmap/ic_directions_bike_white_24dp</item>
+    </style>
+    
     <!--溢出[弹出]菜单样式 parent相当于继承【可以不要parent】-->
     <style name="OverflowMenuStyle" parent="@style/Widget.AppCompat.PopupMenu.Overflow">
         <!-- 是否覆盖锚点，默认为true，即盖住Toolbar -->

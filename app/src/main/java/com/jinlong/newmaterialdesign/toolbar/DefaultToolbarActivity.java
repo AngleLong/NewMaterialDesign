@@ -74,6 +74,10 @@ public class DefaultToolbarActivity extends AppCompatActivity {
             case R.id.menu_other:
                 Toast.makeText(this, "其他", Toast.LENGTH_SHORT).show();
                 break;
+            case R.id.menu_yun:
+                intent = new Intent(DefaultToolbarActivity.this, YunActivity.class);
+                startActivity(intent);
+                break;
             case R.id.menu_fragment:
                 intent = new Intent(DefaultToolbarActivity.this, WithFragmentActivity.class);
                 startActivity(intent);
