@@ -19,7 +19,9 @@
         <activity android:name=".toolbar.ZhiHuToolbarActivity" />
         <activity android:name=".toolbar.DefaultToolbarActivity" />
         <activity android:name=".toolbar.WithFragmentActivity" />
-        <activity android:name=".toolbar.YunActivity"></activity>
+        <activity android:name=".toolbar.YunActivity" />
+        <activity android:name=".navigation.NavigationActivity"
+            android:theme="@style/BaseTheme"/>
     </application>
 
 </manifest>

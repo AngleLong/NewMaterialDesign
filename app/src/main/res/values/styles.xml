@@ -12,7 +12,7 @@
     <style name="BaseTheme" parent="AppTheme">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
-        <item name="android:textColorSecondary">#ffffff</item>
+        <!--<item name="android:textColorSecondary">#ffffff</item>-->
         <!--Toolbar的主题设置-->
         <item name="toolbarStyle">@style/NoSpaceActionBarTheme</item>
 

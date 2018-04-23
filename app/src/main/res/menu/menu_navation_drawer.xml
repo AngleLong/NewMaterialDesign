@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@mipmap/ic_call_white_24dp"
+            android:title="打电话" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@mipmap/ic_directions_bike_white_24dp"
+            android:title="骑行" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@mipmap/ic_dialer_sip_white_24dp"
+            android:title="又是打电话" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@mipmap/ic_chat_bubble_outline_white_24dp"
+            android:title="消息" />
+    </group>
+
+    <item android:title="底部条目组">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@mipmap/ic_call_missed_outgoing_white_24dp"
+                android:title="转弯" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@mipmap/ic_import_export_white_24dp"
+                android:title="好奇怪" />
+        </menu>
+    </item>
+
+</menu>
