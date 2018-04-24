@@ -21,13 +21,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <android.support.design.widget.NavigationView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="left"
-            app:headerLayout="@layout/nav_header"
-            app:itemIconTint="@color/colorPrimaryDark"
-            app:menu="@menu/menu_navation_drawer" />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -39,6 +32,15 @@
                 android:gravity="center"
                 android:text="假装这里有内容" />
         </LinearLayout>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            app:headerLayout="@layout/nav_header"
+            app:itemIconTint="@color/colorPrimaryDark"
+            app:menu="@menu/menu_navation_drawer" />
 
     </android.support.v4.widget.DrawerLayout>
 </LinearLayout>

@@ -6,6 +6,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
     </style>
 
     <!--Toolbar主题的设置-->
@@ -19,6 +20,13 @@
         <!--SearchView的主题设置-->
         <item name="searchViewStyle">@style/SearchViewStyle</item>
     </style>
+
+    <!--小汉堡颜色为白色-->
+    <style name="DrawerArrowStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+
 
     <!--SearchView的主题设置-->
     <style name="SearchViewStyle" parent="Widget.AppCompat.SearchView">
