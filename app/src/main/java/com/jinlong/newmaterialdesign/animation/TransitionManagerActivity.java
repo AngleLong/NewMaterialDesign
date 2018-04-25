@@ -1,20 +1,21 @@
 package com.jinlong.newmaterialdesign.animation;
 
-import android.os.Build;
-import android.support.constraint.ConstraintLayout;
-import android.support.transition.Transition;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.transition.Fade;
-import android.transition.Scene;
-import android.transition.Slide;
-import android.transition.TransitionManager;
+import android.support.constraint.ConstraintLayout;
+import android.support.transition.AutoTransition;
+import android.support.transition.ChangeBounds;
+import android.support.transition.ChangeClipBounds;
+import android.support.transition.Scene;
+import android.support.transition.Slide;
+import android.support.transition.TransitionManager;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
 import android.view.View;
+import android.widget.FrameLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.jinlong.newmaterialdesign.R;
-import com.transitionseverywhere.Recolor;
 
 /**
  * 这个适用于展示TransitionManager的动画效果
@@ -23,6 +24,9 @@ public class TransitionManagerActivity extends AppCompatActivity {
 
     private ConstraintLayout mCl_root;
     private TextView mTvText;
+    private Scene mScene1;
+    private Scene mScene2;
+    private boolean isScene2;//这个标识是显示的是否是Scene2的页面
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +34,7 @@ public class TransitionManagerActivity extends AppCompatActivity {
         setContentView(R.layout.activity_transition_manager);
 
         initView();
+        initScene();
     }
 
     private void initView() {
@@ -37,24 +42,29 @@ public class TransitionManagerActivity extends AppCompatActivity {
         mTvText = findViewById(R.id.tv_text);
     }
 
+    /**
+     * 初始化Scene
+     */
+    private void initScene() {
+        FrameLayout layout = findViewById(R.id.rl_root);
+        mScene1 = Scene.getSceneForLayout(layout, R.layout.scene1, this);
+        mScene2 = Scene.getSceneForLayout(layout, R.layout.scene2, this);
+        TransitionManager.go(mScene1);
+    }
 
     public void animation(View view) {
-        //首先这里beginDelayedTransition开启的是一个默认的动画，若果你想用别的可以用Go那个方法
-//        if (Build.VERSION.SDK_INT > 19) {
-//            Slide slide = new Slide(Gravity.RIGHT);
-//            TransitionManager.beginDelayedTransition(mCl_root, slide);
-//        } else {
-//            android.support.transition.Slide slide = new android.support.transition.Slide()
-//            com.transitionseverywhere.TransitionManager.beginDelayedTransition(mCl_root,fade);
-//        }
-        android.support.transition.Slide slide = new android.support.transition.Slide(Gravity.BOTTOM);
-        slide.setDuration(2000);
-        android.support.transition.TransitionManager.beginDelayedTransition(mCl_root, slide);
+        Slide slide = new Slide(Gravity.BOTTOM);
+        TransitionManager.beginDelayedTransition(mCl_root, slide);
 
         if (mTvText.getVisibility() == View.VISIBLE) {
             mTvText.setVisibility(View.GONE);
         } else {
             mTvText.setVisibility(View.VISIBLE);
         }
+    }
+
+    public void scene(View view) {
+        TransitionManager.go(isScene2 ? mScene1 : mScene2,new ChangeBounds());
+        isScene2 = !isScene2;
     }
 }

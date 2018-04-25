@@ -23,6 +23,14 @@
         android:text="实现动画变换"
         app:layout_constraintTop_toBottomOf="@id/toolbar" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="scene"
+        android:text="变换动画"
+        app:layout_constraintLeft_toRightOf="@id/btn_animation"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
     <TextView
         android:id="@+id/tv_text"
         android:layout_width="wrap_content"
@@ -30,4 +38,13 @@
         android:padding="20dp"
         android:text="请注意这些文字的变化"
         app:layout_constraintTop_toBottomOf="@id/btn_animation" />
+
+   <FrameLayout
+       android:id="@+id/rl_root"
+       android:layout_width="match_parent"
+       app:layout_constraintTop_toBottomOf="@id/tv_text"
+       android:layout_height="200dp">
+
+       <include layout="@layout/scene1" />
+   </FrameLayout>
 </android.support.constraint.ConstraintLayout>
