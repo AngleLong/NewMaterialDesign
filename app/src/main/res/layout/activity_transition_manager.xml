@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jinlong.newmaterialdesign.animation.TransitionManagerActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        app:title="展示动画效果"
+        app:titleTextColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btn_animation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="animation"
+        android:text="实现动画变换"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="请注意这些文字的变化"
+        app:layout_constraintTop_toBottomOf="@id/btn_animation" />
+</android.support.constraint.ConstraintLayout>

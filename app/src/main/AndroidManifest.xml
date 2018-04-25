@@ -20,8 +20,10 @@
         <activity android:name=".toolbar.DefaultToolbarActivity" />
         <activity android:name=".toolbar.WithFragmentActivity" />
         <activity android:name=".toolbar.YunActivity" />
-        <activity android:name=".navigation.NavigationActivity"
-            android:theme="@style/BaseTheme"/>
+        <activity
+            android:name=".navigation.NavigationActivity"
+            android:theme="@style/BaseTheme" />
+        <activity android:name=".animation.TransitionManagerActivity"></activity>
     </application>
 
 </manifest>
