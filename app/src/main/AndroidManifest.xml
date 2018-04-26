@@ -25,7 +25,8 @@
             android:theme="@style/BaseTheme" />
         <activity android:name=".animation.TransitionManagerActivity" />
         <activity android:name=".animation.HandleViewActivity" />
-        <activity android:name=".animation.SceneActivity"></activity>
+        <activity android:name=".animation.SceneActivity" />
+        <activity android:name=".animation.SharedActivity"></activity>
     </application>
 
 </manifest>

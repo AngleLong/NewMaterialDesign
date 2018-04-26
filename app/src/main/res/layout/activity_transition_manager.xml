@@ -15,23 +15,53 @@
         app:title="展示动画效果"
         app:titleTextColor="@android:color/white" />
 
+    <LinearLayout
+        android:id="@+id/ll_shared"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:onClick="sharedAnimation"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_heard"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/heard_1" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:text="这是一个标题栏目" />
+    </LinearLayout>
+
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintTop_toBottomOf="@id/ll_shared"
         app:layout_constraintVertical_weight="1">
 
-        <Button
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="handleView"
-            android:text="操作单独View的" />
+            android:orientation="vertical">
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="handleScene"
-            android:text="操作Scene" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="handleView"
+                android:text="操作单独View的" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="handleScene"
+                android:text="操作Scene" />
+        </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
 
     <!--<Button-->

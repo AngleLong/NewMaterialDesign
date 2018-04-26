@@ -14,6 +14,22 @@
         android:onClick="fadeTransition"
         android:text="渐变效果" />
 
+    <Button
+        android:id="@+id/btn_slide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="slideTransition"
+        android:text="移动效果"
+        app:layout_constraintLeft_toRightOf="@id/btn_fade" />
+
+    <Button
+        android:id="@+id/btn_explode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="explodeTransition"
+        android:text="炸裂效果"
+        app:layout_constraintLeft_toRightOf="@id/btn_slide" />
+
     <TextView
         android:id="@+id/tv_show"
         android:layout_width="wrap_content"

@@ -13,6 +13,8 @@ import android.support.transition.Scene;
 import android.support.transition.Slide;
 import android.support.transition.TransitionManager;
 import android.support.transition.TransitionSet;
+import android.support.v4.app.ActivityOptionsCompat;
+import android.support.v4.util.Pair;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
 import android.view.View;
@@ -22,6 +24,8 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.jinlong.newmaterialdesign.R;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 /**
  * 这个适用于展示TransitionManager的动画效果
@@ -56,6 +60,19 @@ public class TransitionManagerActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    /**
+     * 共享动画
+     */
+    public void sharedAnimation(View view) {
+        CircleImageView civHead = findViewById(R.id.civ_heard);
+        TextView tvTitle = findViewById(R.id.tv_title);
+
+        Intent intent = new Intent(this, SharedActivity.class);
+        ActivityOptionsCompat optionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(this,
+                new Pair<View, String>(civHead, "shared_image"),
+                new Pair<View, String>(tvTitle, "shared_textview"));
+        startActivity(intent, optionsCompat.toBundle());
+    }
 //
 //    /**
 //     * 初始化Scene
