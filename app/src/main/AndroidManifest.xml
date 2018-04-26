@@ -23,7 +23,9 @@
         <activity
             android:name=".navigation.NavigationActivity"
             android:theme="@style/BaseTheme" />
-        <activity android:name=".animation.TransitionManagerActivity"></activity>
+        <activity android:name=".animation.TransitionManagerActivity" />
+        <activity android:name=".animation.HandleViewActivity" />
+        <activity android:name=".animation.SceneActivity"></activity>
     </application>
 
 </manifest>

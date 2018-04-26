@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jinlong.newmaterialdesign.animation.SceneActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        app:title="展示动画效果"
+        app:titleTextColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btn_scene"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="操作Scene"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <FrameLayout
+        android:id="@+id/rl_root"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintTop_toBottomOf="@id/btn_scene">
+
+        <include layout="@layout/scene1" />
+    </FrameLayout>
+</android.support.constraint.ConstraintLayout>
