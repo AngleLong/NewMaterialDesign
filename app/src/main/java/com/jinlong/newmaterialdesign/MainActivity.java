@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.jinlong.newmaterialdesign.animation.TransitionManagerActivity;
+import com.jinlong.newmaterialdesign.fab.FABActivity;
 import com.jinlong.newmaterialdesign.navigation.NavigationActivity;
 import com.jinlong.newmaterialdesign.toolbar.DefaultToolbarActivity;
 
@@ -44,5 +45,13 @@ public class MainActivity extends AppCompatActivity {
     public void animation(View view) {
         Intent transitionAnimation = new Intent(this, TransitionManagerActivity.class);
         startActivity(transitionAnimation);
+    }
+
+    /**
+     * Fab的使用演示
+     */
+    public void fab(View view) {
+        Intent intent = new Intent(this, FABActivity.class);
+        startActivity(intent);
     }
 }

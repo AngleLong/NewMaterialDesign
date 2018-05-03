@@ -3,7 +3,6 @@
     android:duration="500">
 
     <slide android:slideEdge="bottom">
-
         <targets>
             <target android:targetId="@+id/viv_1" />
             <target android:targetId="@+id/viv_2" />
@@ -11,12 +10,10 @@
     </slide>
 
     <slide android:slideEdge="top">
-
         <targets>
             <target android:targetId="@+id/fl_top" />
             <target android:targetId="@+id/fab" />
         </targets>
     </slide>
-
 
 </transitionSet>

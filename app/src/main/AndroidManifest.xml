@@ -26,7 +26,9 @@
         <activity android:name=".animation.TransitionManagerActivity" />
         <activity android:name=".animation.HandleViewActivity" />
         <activity android:name=".animation.SceneActivity" />
-        <activity android:name=".animation.SharedActivity"></activity>
+        <activity android:name=".animation.SharedActivity" />
+        <activity android:name=".fab.FABActivity" />
+        <activity android:name=".fab.FABAndRecyclerViewActivity"></activity>
     </application>
 
 </manifest>
