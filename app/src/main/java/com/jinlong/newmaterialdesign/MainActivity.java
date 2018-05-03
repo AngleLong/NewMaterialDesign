@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
      * 作者 贺金龙
      * <p>
      * 方法描述: 动画的演示
-     * 创建时间: 2018/4/25 1659
+     * 创建时间: 2018/4/25
      */
     public void animation(View view) {
         Intent transitionAnimation = new Intent(this, TransitionManagerActivity.class);

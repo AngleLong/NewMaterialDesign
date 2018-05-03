@@ -19,6 +19,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="操作Scene"
+        android:onClick="scene"
         app:layout_constraintTop_toBottomOf="@id/toolbar" />
 
     <FrameLayout

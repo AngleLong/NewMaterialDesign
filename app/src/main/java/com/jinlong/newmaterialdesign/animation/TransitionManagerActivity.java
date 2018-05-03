@@ -71,40 +71,7 @@ public class TransitionManagerActivity extends AppCompatActivity {
         ActivityOptionsCompat optionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(this,
                 new Pair<View, String>(civHead, "shared_image"),
                 new Pair<View, String>(tvTitle, "shared_textview"));
+
         startActivity(intent, optionsCompat.toBundle());
     }
-//
-//    /**
-//     * 初始化Scene
-//     */
-//    private void initScene() {
-//        FrameLayout layout = findViewById(R.id.rl_root);
-//        mScene1 = Scene.getSceneForLayout(layout, R.layout.scene1, this);
-//        mScene2 = Scene.getSceneForLayout(layout, R.layout.scene2, this);
-//        TransitionManager.go(mScene1);
-//    }
-//
-//    public void animation(View view) {
-//        mCl_root = findViewById(R.id.cl_root);
-//        mTvText = findViewById(R.id.tv_text);
-//        Slide slide = new Slide();
-////        Explode explode = new Explode();
-//        Fade fade = new Fade();
-//        TransitionSet transitionSet = new TransitionSet();
-//        transitionSet.addTransition(slide);
-//        transitionSet.addTransition(fade);
-//
-//        TransitionManager.beginDelayedTransition(mCl_root, transitionSet);
-//
-//        if (mTvText.getVisibility() == View.VISIBLE) {
-//            mTvText.setVisibility(View.GONE);
-//        } else {
-//            mTvText.setVisibility(View.VISIBLE);
-//        }
-//    }
-//
-//    public void scene(View view) {
-//        TransitionManager.go(isScene2 ? mScene1 : mScene2, new ChangeBounds());
-//        isScene2 = !isScene2;
-//    }
 }

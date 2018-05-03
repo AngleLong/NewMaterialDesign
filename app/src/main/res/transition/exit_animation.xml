@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="500">
+
+    <slide android:slideEdge="bottom">
+
+        <targets>
+            <target android:targetId="@+id/viv_1" />
+            <target android:targetId="@+id/viv_2" />
+        </targets>
+    </slide>
+
+    <slide android:slideEdge="top">
+
+        <targets>
+            <target android:targetId="@+id/fl_top" />
+            <target android:targetId="@+id/fab" />
+        </targets>
+    </slide>
+
+
+</transitionSet>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--FAB渐显-->
+    <fade
+        android:duration="500"
+        android:startDelay="500">
+        <targets android:targetId="@+id/fab"></targets>
+    </fade>
+
+    <!--底部两个控件进入动画-->
+    <slide
+        android:duration="1000"
+        android:slideEdge="bottom"
+        android:startDelay="500">
+        <targets>
+            <target android:targetId="@+id/viv_1" />
+            <target android:targetId="@+id/viv_2" />
+        </targets>
+    </slide>
+</transitionSet>
