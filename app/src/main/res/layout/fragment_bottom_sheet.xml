@@ -1,0 +1,55 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jinlong.newmaterialdesign.behavior.BottomSheetFragment">
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:background="#f25b41"
+            android:gravity="center"
+            android:text="底部还有内容啊！！！" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#009988"
+            android:gravity="center"
+            android:text="标签1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#002288"
+            android:gravity="center"
+            android:text="标签2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#009922"
+            android:gravity="center"
+            android:text="标签3" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#00aa88"
+            android:gravity="center"
+            android:text="标签4" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#999988"
+            android:gravity="center"
+            android:text="标签5" />
+    </LinearLayout>
+</FrameLayout>

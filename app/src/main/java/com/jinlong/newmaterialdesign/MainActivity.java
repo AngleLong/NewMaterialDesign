@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.jinlong.newmaterialdesign.animation.TransitionManagerActivity;
+import com.jinlong.newmaterialdesign.behavior.BehaviorActivity;
 import com.jinlong.newmaterialdesign.fab.FABActivity;
 import com.jinlong.newmaterialdesign.navigation.NavigationActivity;
 import com.jinlong.newmaterialdesign.toolbar.DefaultToolbarActivity;
@@ -52,6 +53,14 @@ public class MainActivity extends AppCompatActivity {
      */
     public void fab(View view) {
         Intent intent = new Intent(this, FABActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * behavior的演示
+     */
+    public void behavior(View view){
+        Intent intent = new Intent(this, BehaviorActivity.class);
         startActivity(intent);
     }
 }

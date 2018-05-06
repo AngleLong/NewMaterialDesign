@@ -29,7 +29,9 @@
         <activity android:name=".animation.SharedActivity" />
         <activity android:name=".fab.FABActivity" />
         <activity android:name=".fab.FABAndRecyclerViewActivity" />
-        <activity android:name=".fab.FABLocationActivity"></activity>
+        <activity android:name=".fab.FABLocationActivity" />
+        <activity android:name=".behavior.BehaviorActivity" />
+        <activity android:name=".behavior.TwoBehaviorActivity"></activity>
     </application>
 
 </manifest>

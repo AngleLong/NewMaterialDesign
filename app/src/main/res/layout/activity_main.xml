@@ -70,6 +70,12 @@
                 android:layout_height="wrap_content"
                 android:onClick="fab"
                 android:text="FloatingActionBar的显示" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="behavior"
+                android:text="behavior的展示" />
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
 </android.support.design.widget.CoordinatorLayout>
