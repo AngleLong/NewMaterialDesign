@@ -104,4 +104,12 @@ public class BehaviorActivity extends AppCompatActivity {
         Intent intent = new Intent(this, TwoBehaviorActivity.class);
         startActivity(intent);
     }
+
+    /**
+     * 顶部头部保持不动的Behavior
+     */
+    public void oneBehavior(View view) {
+        Intent intent = new Intent(this, OneBehaviorActivity.class);
+        startActivity(intent);
+    }
 }

@@ -10,7 +10,7 @@
     <LinearLayout
         android:id="@+id/ll_top"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="wrap_content"
         android:background="#45bc89"
         android:orientation="vertical">
 
@@ -37,6 +37,12 @@
             android:layout_height="wrap_content"
             android:onClick="bottomBehavior"
             android:text="底部随顶部隐藏的Behavior" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="oneBehavior"
+            android:text="顶部头部不动的Behavior" />
     </LinearLayout>
 
     <TextView

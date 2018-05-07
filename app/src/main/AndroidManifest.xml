@@ -31,7 +31,8 @@
         <activity android:name=".fab.FABAndRecyclerViewActivity" />
         <activity android:name=".fab.FABLocationActivity" />
         <activity android:name=".behavior.BehaviorActivity" />
-        <activity android:name=".behavior.TwoBehaviorActivity"></activity>
+        <activity android:name=".behavior.TwoBehaviorActivity" />
+        <activity android:name=".behavior.OneBehaviorActivity"></activity>
     </application>
 
 </manifest>
