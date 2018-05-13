@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jinlong.newmaterialdesign.material.MaterialActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/abl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll|snap|enterAlways"
+            app:titleTextColor="@android:color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="假装是一个标题"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.design.widget.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:tabSelectedTextColor="@color/colorAccent"
+            app:tabTextColor="@android:color/white">
+
+            <android.support.design.widget.TabItem
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="标签1" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="标签2" />
+        </android.support.design.widget.TabLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:gravity="center"
+                android:text="底部还有内容啊！！！" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#009988"
+                android:gravity="center"
+                android:text="标签1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#002288"
+                android:gravity="center"
+                android:text="标签2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#009922"
+                android:gravity="center"
+                android:text="标签3" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00aa88"
+                android:gravity="center"
+                android:text="标签4" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#999988"
+                android:gravity="center"
+                android:text="标签5" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

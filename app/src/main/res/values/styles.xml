@@ -32,7 +32,7 @@
     <style name="SearchViewStyle" parent="Widget.AppCompat.SearchView">
         <item name="searchIcon">@mipmap/ic_directions_bike_white_24dp</item>
     </style>
-    
+
     <!--溢出[弹出]菜单样式 parent相当于继承【可以不要parent】-->
     <style name="OverflowMenuStyle" parent="@style/Widget.AppCompat.PopupMenu.Overflow">
         <!-- 是否覆盖锚点，默认为true，即盖住Toolbar -->
@@ -80,5 +80,21 @@
     <style name="OverflowTheme" parent="android:style/Widget.Holo.Light.ActionButton.Overflow">
         <item name="android:src">@mipmap/ic_linear_scale_white_24dp</item>
     </style>
+
+    <!--AppBarLayout的文字颜色-->
+    <style name="AppBarTextStyle" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!--TabLayout的文字修改-->
+    <style name="TabLayoutStyle">
+        <item name="android:textSize">20sp</item>
+        <!--这个是控制你输入的字母大小写的！-->
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!--<style name="TextAppearance.Holo.Large" parent="TextAppearance.Large" />-->
+    <!--<style name="TextAppearance.Holo.Medium"parent="TextAppearance.Medium"/>-->
+    <!--<style name="TextAppearance.Holo.Small" parent="TextAppearance.Small" />-->
 
 </resources>

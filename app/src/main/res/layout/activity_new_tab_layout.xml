@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tablayout.TabLayoutActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="TabLayout的展示"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tb_top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/top_tab_bg"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:tabGravity="center"
+        app:tabIndicatorColor="#fcb314"
+        app:tabIndicatorHeight="2dp"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/colorPrimaryDark"
+        app:tabTextColor="@android:color/white" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tb"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorAccent"
+        app:layout_constraintTop_toBottomOf="@id/tb_top"
+        app:tabGravity="center"
+        app:tabIndicatorColor="#fcb314"
+        app:tabIndicatorHeight="2dp"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/colorPrimaryDark"
+        app:tabTextAppearance="@style/TabLayoutStyle"
+        app:tabTextColor="@android:color/white" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintTop_toBottomOf="@id/tb" />
+
+</android.support.constraint.ConstraintLayout>

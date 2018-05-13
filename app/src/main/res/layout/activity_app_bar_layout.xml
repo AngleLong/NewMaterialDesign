@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jinlong.newmaterialdesign.material.AppBarLayoutActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#e79349"
+            android:gravity="center"
+            android:scaleType="center"
+            android:text="这里可以放ViewPager"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            app:layout_scrollFlags="scroll" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            app:layout_scrollFlags="scroll" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#009988"
+            android:gravity="center"
+            android:text="这里时需要吸顶的效果内容，可以是任何内容的"
+            android:textColor="@android:color/white" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:gravity="center"
+                android:text="底部还有内容啊！！！" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#009988"
+                android:gravity="center"
+                android:text="标签1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#002288"
+                android:gravity="center"
+                android:text="标签2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#009922"
+                android:gravity="center"
+                android:text="标签3" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00aa88"
+                android:gravity="center"
+                android:text="标签4" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#999988"
+                android:gravity="center"
+                android:text="标签5" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

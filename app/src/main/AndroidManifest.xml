@@ -32,7 +32,12 @@
         <activity android:name=".fab.FABLocationActivity" />
         <activity android:name=".behavior.BehaviorActivity" />
         <activity android:name=".behavior.TwoBehaviorActivity" />
-        <activity android:name=".behavior.OneBehaviorActivity"></activity>
+        <activity android:name=".behavior.OneBehaviorActivity" />
+        <activity android:name=".material.MaterialActivity" />
+        <activity android:name=".material.SupperMaterialActivity" />
+        <activity android:name=".material.AppBarLayoutActivity" />
+        <activity android:name=".tablayout.TabLayoutActivity" />
+        <activity android:name=".tablayout.NewTabLayoutActivity"></activity>
     </application>
 
 </manifest>

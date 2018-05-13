@@ -3,13 +3,10 @@ package com.jinlong.newmaterialdesign.behavior;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.design.widget.CoordinatorLayout;
-import android.support.design.widget.FloatingActionButton;
 import android.support.v4.view.ViewCompat;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
-
-import com.jinlong.newmaterialdesign.R;
 
 /**
  * 实现一个FAB的behavior
@@ -49,8 +46,6 @@ public class OneBehavior extends CoordinatorLayout.Behavior {
             child.setTranslationY(transY);
         }
     }
-
-
 
 
     @Override

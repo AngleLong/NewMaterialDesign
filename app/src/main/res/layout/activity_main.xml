@@ -76,6 +76,36 @@
                 android:layout_height="wrap_content"
                 android:onClick="behavior"
                 android:text="behavior的展示" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="materialDesign"
+                android:text="MaterialDesign联动" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="supperMaterialDesign"
+                android:text="MaterialDesign更酷炫的联动" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="AppBarLayout"
+                android:text="AppBarLayout更酷炫的联动" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="tabLayout"
+                android:text="tabLayout的使用" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="newTabLayout"
+                android:text="TabLayout自定义布局的使用" />
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
 </android.support.design.widget.CoordinatorLayout>
