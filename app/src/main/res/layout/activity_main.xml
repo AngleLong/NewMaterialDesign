@@ -106,6 +106,12 @@
                 android:layout_height="wrap_content"
                 android:onClick="newTabLayout"
                 android:text="TabLayout自定义布局的使用" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="cardView"
+                android:text="cardView的使用" />
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
 </android.support.design.widget.CoordinatorLayout>

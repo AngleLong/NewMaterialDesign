@@ -8,6 +8,7 @@ import android.widget.TableLayout;
 
 import com.jinlong.newmaterialdesign.animation.TransitionManagerActivity;
 import com.jinlong.newmaterialdesign.behavior.BehaviorActivity;
+import com.jinlong.newmaterialdesign.cardView.CardViewActivity;
 import com.jinlong.newmaterialdesign.fab.FABActivity;
 import com.jinlong.newmaterialdesign.material.AppBarLayoutActivity;
 import com.jinlong.newmaterialdesign.material.MaterialActivity;
@@ -107,6 +108,14 @@ public class MainActivity extends AppCompatActivity {
      */
     public void newTabLayout(View view) {
         Intent intent = new Intent(this, NewTabLayoutActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * CardView的使用
+     */
+    public void cardView(View view) {
+        Intent intent = new Intent(this, CardViewActivity.class);
         startActivity(intent);
     }
 }
