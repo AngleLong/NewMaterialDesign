@@ -10,6 +10,7 @@ import com.jinlong.newmaterialdesign.animation.TransitionManagerActivity;
 import com.jinlong.newmaterialdesign.behavior.BehaviorActivity;
 import com.jinlong.newmaterialdesign.cardView.CardViewActivity;
 import com.jinlong.newmaterialdesign.fab.FABActivity;
+import com.jinlong.newmaterialdesign.input.InputActivity;
 import com.jinlong.newmaterialdesign.material.AppBarLayoutActivity;
 import com.jinlong.newmaterialdesign.material.MaterialActivity;
 import com.jinlong.newmaterialdesign.material.SupperMaterialActivity;
@@ -116,6 +117,14 @@ public class MainActivity extends AppCompatActivity {
      */
     public void cardView(View view) {
         Intent intent = new Intent(this, CardViewActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * CardView的使用
+     */
+    public void textInputLayout(View view) {
+        Intent intent = new Intent(this, InputActivity.class);
         startActivity(intent);
     }
 }

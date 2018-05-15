@@ -93,8 +93,10 @@
         <item name="android:textAllCaps">false</item>
     </style>
 
-    <!--<style name="TextAppearance.Holo.Large" parent="TextAppearance.Large" />-->
-    <!--<style name="TextAppearance.Holo.Medium"parent="TextAppearance.Medium"/>-->
-    <!--<style name="TextAppearance.Holo.Small" parent="TextAppearance.Small" />-->
-
+    <!--TextInputLayout的文字修改-->
+    <style name="TextInputLayoutStyle">
+        <item name="android:textSize">20sp</item>
+        <!--这个是控制你输入的字母大小写的！-->
+        <item name="android:textColor">#91452e</item>
+    </style>
 </resources>

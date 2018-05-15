@@ -38,7 +38,8 @@
         <activity android:name=".material.AppBarLayoutActivity" />
         <activity android:name=".tablayout.TabLayoutActivity" />
         <activity android:name=".tablayout.NewTabLayoutActivity" />
-        <activity android:name=".cardView.CardViewActivity"></activity>
+        <activity android:name=".cardView.CardViewActivity" />
+        <activity android:name=".input.InputActivity" />
     </application>
 
 </manifest>
